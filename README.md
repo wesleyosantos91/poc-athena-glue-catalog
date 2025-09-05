@@ -21,9 +21,6 @@ O ambiente é parametrizável:
 - 📊 Integração com Glue Data Catalog
 - 🐳 Ambiente local com LocalStack
 - ⚙️ Configuração multi-ambiente (local/dev)
-- 📝 Documentação automática com OpenAPI/Swagger
-- 🧪 Testes automatizados
-- 📈 Monitoramento com Spring Actuator
 
 ---
 
