@@ -226,38 +226,6 @@ app:
 
 ---
 
-## 📊 Monitoramento e Observabilidade
-
-### 🔍 Health Checks
-```bash
-# Status geral
-curl http://localhost:8080/actuator/health
-
-# Métricas detalhadas
-curl http://localhost:8080/actuator/metrics
-
-# Informações da aplicação
-curl http://localhost:8080/actuator/info
-```
-
-### 📋 Swagger UI
-Acesse: http://localhost:8080/swagger-ui/index.html
-
-### 📈 Logs estruturados
-A aplicação gera logs em formato estruturado para facilitar monitoramento:
-```json
-{
-  "timestamp": "2025-09-04T10:30:00.123Z",
-  "level": "INFO",
-  "logger": "AthenaQueryService",
-  "message": "Query executada com sucesso",
-  "queryId": "abc123-def456",
-  "executionTime": "2.3s",
-  "rowCount": 150
-}
-```
-
----
 
 ## 🛡️ Segurança e Boas Práticas
 
