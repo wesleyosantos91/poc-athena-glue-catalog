@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+aws:
+  region: us-east-1
+  # endpoint só no profile local
+
+app:
+  athena:
+    database: datalake_db
+    table: sales
+    workgroup: wg_local
+    outputS3: s3://datalake/athena-results/
+    # limites básicos
+    pollIntervalMillis: 1000
+    timeoutSeconds: 90
+    maxRows: 1000

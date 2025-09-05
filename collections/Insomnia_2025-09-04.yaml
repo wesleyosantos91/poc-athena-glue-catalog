@@ -1,0 +1,63 @@
+type: collection.insomnia.rest/5.0
+name: Imported Workspace
+meta:
+  id: wrk_9db189cc0e614628b4717846262ffdac
+  created: 1757033913495
+  modified: 1757033913495
+  description: ""
+collection:
+  - url: http://localhost:8080/athena/query
+    name: Exemplo_1
+    meta:
+      id: req_fa0e23af58404590bd49a038bc559e0c
+      created: 1757033913497
+      modified: 1757034946191
+      isPrivate: false
+      description: ""
+      sortKey: -1757033913497
+    method: GET
+    parameters:
+      - name: sql
+        value: SELECT%20*%20FROM%20%22datalake_db%22.%22sales%22%20LIMIT%205
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/athena/query
+    name: Exemplo_2
+    meta:
+      id: req_21db5b87679c4913870524aba2bfe4f9
+      created: 1757035004134
+      modified: 1757035023031
+      isPrivate: false
+      description: ""
+      sortKey: -1757035004134
+    method: GET
+    parameters:
+      - name: sql
+        value: SELECT%20sku%2C%20SUM(amount)%20AS%20total%20FROM%20%22datalake_db%22.%22sales%22%20GROUP%20BY%20sku%20ORDER%20BY%20total%20DESC%20LIMIT%2010
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_49ff3bb01548f199ae04ce35a612f4a75dd10040
+    created: 1757033913501
+    modified: 1757033913501
+environments:
+  name: Base Environment
+  meta:
+    id: env_49ff3bb01548f199ae04ce35a612f4a75dd10040
+    created: 1757033913498
+    modified: 1757033913498
+    isPrivate: false

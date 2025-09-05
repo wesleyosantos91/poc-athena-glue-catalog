@@ -1,0 +1,11 @@
+aws:
+  region: us-east-1
+  endpoint: http://localhost:4566
+  credentials:
+    accessKeyId: test
+    secretAccessKey: test
+
+app:
+  athena:
+    workgroup: wg_local
+    outputS3: s3://datalake/athena-results/

@@ -1,0 +1,12 @@
+aws:
+  region: us-east-1
+  # sem endpoint: usa AWS real (profile, env vars ou IAM Role)
+  credentials:
+    accessKeyId:
+    secretAccessKey:
+
+app:
+  athena:
+    workgroup: primary
+    # ajuste para seu bucket real:
+    outputS3: s3://meu-bucket-athena/results/
